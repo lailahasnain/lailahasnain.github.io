@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'proximaNovaLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../webfonts/ProximaNovaA-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'proximaNovaReg';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../webfonts/ProximaNovaA-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'proximaNovaSemibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../webfonts/ProximaNovaA-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'proximaNovaBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../webfonts/ProximaNovaA-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'proximaNovaXtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../webfonts/ProximaNovaA-Extrabld.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'proximaNovaBlack';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../webfonts/ProximaNovaA-Black.woff') format('woff');
+}
+
+:root {
+  /* Primary colors */
+  --gray: #333333;
+  --mid-gray: #474747;
+  --light-gray: #999999;
+  --light-mango: #FFF4A8;
+}
