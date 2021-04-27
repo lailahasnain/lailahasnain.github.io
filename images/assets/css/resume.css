@@ -1,0 +1,389 @@
+@import 'variables.css';
+
+.resume.main-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5% 10%;
+}
+
+/* Resume nav bar styling */
+
+.resume.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.resume.nav-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'proximaNovaBold';
+  font-size: 1em;
+  color: var(--gray);
+  width: 17%;
+  min-width: 8.5em;
+  box-sizing: border-box;
+  padding: 1% 1.5%;
+  background: white;
+  border: 2px solid var(--gray);
+  box-shadow: 5px 5px 0 0.5px #17e9e0;
+  list-style: none;
+  margin-right: 10%;
+}
+
+.resume.nav-container ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 0 5%;
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.resume.nav-container ul li a:hover {
+  background: #b9f8f5;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+/* Resume download styling */
+
+button {
+  font-family: 'proximaNovaBold';
+  font-size: 1.2em;
+  color: var(--gray);
+  box-sizing: border-box;
+  padding: 5% 30%;
+  background: #b9f8f5;
+}
+
+button:hover {
+  background: #17e1e9;
+  cursor: pointer;
+}
+
+/* Resume header styling */
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10% 0 5% 0;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'proximaNovaBold';
+  width: 20%;
+  min-width: 180px;
+}
+
+.title-wrapper h1 {
+  font-size: 2em;
+  color: var(--gray);
+}
+
+.title-wrapper h2 {
+  font-size: 1em;
+  color: var(--mid-gray);
+}
+
+.contact-wrapper {
+  width: 52%;
+}
+
+.resume.contact-wrapper ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.resume.contact-wrapper ul li {
+  font-family: 'proximaNovaSemiBold';
+  font-size: 1em;
+}
+
+.resume.contact-wrapper ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--mid-gray);
+  text-decoration: none;
+}
+
+.resume.contact-wrapper ul li a:hover {
+  background: #b9f8f5;
+  cursor: pointer;
+}
+
+.icon-wrapper {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 0.5em;
+}
+
+.icon-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Resume skills styling */
+
+.resume.skills-container {
+  width: 100%;
+}
+
+.resume.headliner-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'proximaNovaBold';
+  font-size: 1.2em;
+  color: var(--gray);
+  box-sizing: border-box;
+  padding-bottom: 1.5em;
+  width: 100%;
+}
+
+.resume.headliner-wrapper h2 {
+  box-sizing: border-box;
+  padding: 0.3em 0 0.3em 0.3em;
+  width: 15%;
+  border: 2px solid var(--gray);
+  box-shadow: 5px 5px 0 0.5px #17e1e9;
+}
+
+.resume.skills-container p,
+.courses-container p {
+  font-family: 'proximaNovaReg';
+  color: var(--mid-gray);
+}
+
+/* Resume experience styling */
+
+.experience-container,
+.education-container,
+.courses-container {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.job-header-wrapper,
+.school-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'proximaNovaSemiBold';
+  font-size: 1.1em;
+  color: var(--gray);
+}
+
+.job-container, .description-container {
+  font-family: 'proximaNovaReg';
+}
+
+.job-container {
+  box-sizing: border-box;
+  padding: 1em 0;
+}
+
+.job-header-wrapper h3:first-of-type,
+.school-wrapper h3:first-of-type {
+  background: #17e1e9;
+  box-sizing: border-box;
+  padding: 0.25em;
+}
+
+.job-header-wrapper p,
+.school-wrapper p {
+  box-sizing: border-box;
+  padding: 0 0.25em;
+}
+
+.description-container {
+  line-height: 2;
+  margin-top: 1em;
+}
+
+/* Resume education styling */
+
+.school-wrapper {
+  margin-bottom: 1em;
+}
+
+/* Resume courses styling */
+
+.courses-container {
+  box-sizing: border-box;
+  padding-bottom: 3em;
+}
+
+/* Dynamic styling */
+
+@media screen and (min-width: 320px) {
+  .resume.nav-container ul,
+  .download-container button {
+    font-size: calc(15px + 5 * ((100vw - 320px) / 680));
+  }
+
+  .title-wrapper  h1 {
+    font-size: calc(26px + 6 * ((100vw - 320px) / 680));
+  }
+
+  .title-wrapper  h2 {
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+  }
+
+  .contact-wrapper ul li a {
+    font-size: calc(10px + 8 * ((100vw - 320px) / 680));
+  }
+
+  .resume.skills-container p,
+  .description-container {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+  }
+
+  .resume.headliner-wrapper {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+  }
+
+  .job-header-wrapper,
+  .school-wrapper {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .resume.nav-container ul,
+  .download-container button {
+    font-size: 20px;
+  }
+
+  .header-container {
+    margin: 10% 0 5% 0;
+  }
+
+  .title-wrapper  h1 {
+    font-size: 32px;
+  }
+
+  .title-wrapper  h2,
+  .contact-wrapper ul li a {
+    font-size: 16px;
+  }
+
+  .resume.skills-container p,
+  .description-container {
+    font-size: 16px;
+  }
+
+  .resume.headliner-wrapper {
+    font-size: 19px;
+  }
+
+  .job-header-wrapper,
+  .school-wrapper {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5%;
+  }
+
+  .header-container {
+    margin: 10% 0 5% 0;
+  }
+
+  .title-wrapper {
+    width: 30%;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .contact-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .resume.contact-wrapper ul li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .icon-wrapper {
+    width: 10%;
+    height: 10%;
+    margin-right: 0.5em;
+  }
+
+  .resume.headliner-wrapper h2 {
+    width: 35%;
+  }
+
+  .underline-wrapper {
+    display: none;
+  }
+
+  .resume.skills-container p,
+  .courses-container p {
+    line-height: 1.5;
+  }
+
+  /* Work exp styling */
+
+  button {
+    font-family: 'proximaNovaBold';
+    font-size: 1.2em;
+    color: var(--gray);
+    box-sizing: border-box;
+    padding: 5% 10%;
+    background: #17e9e0;
+  }
+}
+
+
+/* About.html styling */
+
+.about-text {
+  background-color: white;
+  border: 2px solid black;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 30em;
+  float: right;
+
+}
+
+.about-image {
+  border-radius: 50%;
+  border: 5px solid white;
+  height: 13em;
+  width: auto;
+  margin-top: 20rem;
+}
+.image-div {
+  width: 50%;
+}

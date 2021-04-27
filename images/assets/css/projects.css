@@ -1,0 +1,392 @@
+@import 'variables.css';
+
+body {
+  /* min-height: 100%; */
+  background: #17e9e0;
+}
+
+.projects.main-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 5% 10%;
+  width: 100%;
+  height: 100%;
+}
+
+/* Projects nav bar styling */
+
+.projects.nav-wrapper ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'proximaNovaBold';
+  color: var(--gray);
+  width: 17%;
+  min-width: 8.5em;
+  box-sizing: border-box;
+  padding: 1% 1.5%;
+  background: white;
+  border: 2px solid var(--gray);
+  box-shadow: 5px 5px 0 0.5px #b9f8f5;
+  list-style: none;
+  margin-right: 10%;
+}
+
+.projects.nav-wrapper ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 0 5%;
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.projects.nav-wrapper ul li a:hover {
+  background: #b9f8f5;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+/* Projects header styling */
+
+.projects.main-container h1 {
+  font-family: 'proximaNovaBold';
+  font-size: 3em;
+  color: var(--gray);
+  margin-top: 10%;
+}
+
+/* Projects thumbnail styling */
+
+.projects.thumbnails-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 5% 0;
+  list-style: none;
+}
+
+.projects.thumbnails-container ul li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 15em;
+  transition: width 0.5s;
+  margin: 0.25em;
+}
+
+.projects.thumbnails-container ul li:hover {
+  cursor: pointer;
+}
+
+.projects.pokedex-wrapper,
+.projects.morsel-wrapper,
+.projects.nookbnb-wrapper,
+.projects.fikafy-wrapper,
+.projects.goodzilla-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15em;
+  height: 15em;
+  overflow: hidden;
+}
+
+.projects.fikafy-wrapper {
+ background: #F24162;
+}
+
+.projects.goodzilla-wrapper {
+ background: yellowgreen;
+}
+
+/* Thumbnail image styling */
+
+.projects.pokedex-image-wrapper {
+  content: url('../../images/projects/bird.png');
+  width: 100%;
+  height: 100%;
+}
+
+.projects.nookbnb-image-wrapper {
+  content: url('../../images/projects/nookbnb.png');
+  width: 100%;
+  height: 100%;
+}
+
+.projects.nookbnb-image-wrapper:hover {
+  content: url('../../images/projects/nookbnb.gif');
+  width: 100%;
+  height: 100%;
+}
+
+.projects.fikafy-image-wrapper {
+  content: url('../../images/projects/fikafy.png');
+  width: 100%;
+  height: 100%;
+}
+
+.projects.fikafy-image-wrapper:hover {
+  content: url('../../images/projects/fikafy.gif');
+  width: 100%;
+  height: 100%;
+}
+
+.projects.morsel-image-wrapper {
+  content: url('../../images/projects/morsel.png');
+  width: 100%;
+  height: 100%;
+}
+
+.projects.morsel-image-wrapper:hover {
+  content: url('../../images/projects/morsel.gif');
+  width: 100%;
+  height: 100%;
+}
+
+.projects.goodzilla-image-wrapper {
+  content: url('../../images/projects/goodzilla.png');
+  width: 100%;
+  height: 100%;
+}
+
+.projects.goodzilla-image-wrapper:hover {
+  content: url('../../images/projects/goodzilla.gif');
+  width: 100%;
+  height: 100%;
+}
+
+/* Active thumbnail styling */
+
+#pokedex.active,
+#morsel.active,
+#nookbnb.active,
+#fikafy.active,
+#goodzilla.active {
+  width: 30.5em;
+  height: 15em;
+  background: white;
+  transition: width 1s;
+}
+
+#pokedex.active .projects.pokedex-wrapper,
+#morsel.active .projects.morsel-wrapper,
+#nookbnb.active .projects.nookbnb-wrapper,
+#fikafy.active .projects.fikafy-wrapper,
+#goodzilla.active .projects.goodzilla-wrapper  {
+  width: 50%;
+}
+
+/* Project links styling */
+
+#pokedex-links-wrapper,
+#morsel-links-wrapper,
+#nookbnb-links-wrapper,
+#fikafy-links-wrapper,
+#goodzilla-links-wrapper {
+  display: none;
+  box-sizing: border-box;
+  padding: 5%;
+  color: var(--gray);
+  width: 50%;
+}
+
+#pokedex-links-wrapper h3,
+#morsel-links-wrapper h3,
+#nookbnb-links-wrapper h3,
+#fikafy-links-wrapper h3,
+#goodzilla-links-wrapper h3   {
+  font-family: 'proximaNovaBold';
+  font-size: 1em;
+}
+
+#pokedex-links-wrapper p:first-of-type,
+#morsel-links-wrapper p:first-of-type,
+#nookbnb-links-wrapper p:first-of-type,
+#fikafy-links-wrapper p:first-of-type,
+#goodzilla-links-wrapper p:first-of-type {
+  font-family: 'proximaNovaReg';
+  color: var(--mid-gray);
+  box-sizing: border-box;
+  padding: 0.5em 0;
+}
+
+#pokedex-links-wrapper p:last-of-type,
+#morsel-links-wrapper p:last-of-type,
+#nookbnb-links-wrapper p:last-of-type,
+#fikafy-links-wrapper p:last-of-type,
+#goodzilla-links-wrapper p:last-of-type {
+  font-family: 'proximaNovaSemiBold';
+}
+
+#pokedex-links-wrapper p a,
+#morsel-links-wrapper p a,
+#nookbnb-links-wrapper p a,
+#fikafy-links-wrapper p a,
+#goodzilla-links-wrapper p a   {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+#pokedex-links-wrapper p a:hover,
+#morsel-links-wrapper p a:hover,
+#nookbnb-links-wrapper p a:hover,
+#fikafy-links-wrapper p a:hover,
+#goodzilla-links-wrapper p a:hover {
+  color: #04BF55;
+  cursor: pointer;
+}
+
+#pokedex-links-wrapper.active,
+#morsel-links-wrapper.active,
+#nookbnb-links-wrapper.active,
+#fikafy-links-wrapper.active,
+#goodzilla-links-wrapper.active {
+  display: block;
+}
+
+/* Text fade in styling */
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* Dynamic styling */
+
+@media screen and (min-width: 320px) {
+  .projects.main-container h1 {
+    font-size: calc(35px + 6 * ((100vw - 320px) / 680));
+  }
+
+  .projects.nav-wrapper ul {
+    font-size: calc(15px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .projects.main-container h1 {
+    font-size: 45px;
+  }
+
+  .projects.nav-wrapper ul {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #pokedex.active,
+  #morsel.active,
+  #nookbnb.active,
+  #fikafy.active,
+  #goodzilla.active {
+    width: 15em;
+    height: 15em;
+  }
+
+  #pokedex.active .projects.pokedex-wrapper,
+  #morsel.active .projects.morsel-wrapper,
+  #nookbnb.active .projects.nookbnb-wrapper,
+  #fikafy.active .projects.fikafy-wrapper,
+  #goodzilla.active .projects.goodzilla-wrapper  {
+    display: none;
+  }
+
+  #pokedex-links-wrapper,
+  #morsel-links-wrapper,
+  #nookbnb-links-wrapper,
+  #fikafy-links-wrapper,
+  #goodzilla-links-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25% 15%;
+    background: white;
+  }
+
+  #pokedex-links-wrapper p:first-of-type,
+  #morsel-links-wrapper p:first-of-type,
+  #nookbnb-links-wrapper p:first-of-type,
+  #fikafy-links-wrapper p:first-of-type,
+  #goodzilla-links-wrapper p:first-of-type {
+    font-size: 0.8em;
+    box-sizing: border-box;
+    padding: 5% 0;
+  }
+
+  #pokedex-links-wrapper p:last-of-type,
+  #morsel-links-wrapper p:last-of-type,
+  #nookbnb-links-wrapper p:last-of-type,
+  #fikafy-links-wrapper p:last-of-type,
+  #goodzilla-links-wrapper p:last-of-type {
+    font-size: 0.8em;
+    box-sizing: border-box;
+    padding: 10% 0;
+  }
+
+  .fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+}
