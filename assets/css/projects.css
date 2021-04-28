@@ -15,7 +15,6 @@ body {
 }
 
 /* Projects nav bar styling */
-
 .projects.nav-wrapper ul {
   display: flex;
   flex-direction: row;
@@ -24,8 +23,8 @@ body {
   justify-content: space-between;
   font-family: 'proximaNovaBold';
   color: var(--gray);
-  width: 17%;
-  min-width: 8.5em;
+  width: 30%;
+  min-width: 12.5em;
   box-sizing: border-box;
   padding: 1% 1.5%;
   background: white;
@@ -50,7 +49,6 @@ body {
 }
 
 /* Projects header styling */
-
 .projects.main-container h1 {
   font-family: 'proximaNovaBold';
   font-size: 3em;
@@ -59,7 +57,6 @@ body {
 }
 
 /* Projects thumbnail styling */
-
 .projects.thumbnails-container ul {
   display: flex;
   flex-direction: row;
@@ -100,15 +97,14 @@ body {
 }
 
 .projects.fikafy-wrapper {
- background: #F24162;
+  background: #F24162;
 }
 
 .projects.goodzilla-wrapper {
- background: yellowgreen;
+  background: yellowgreen;
 }
 
 /* Thumbnail image styling */
-
 .projects.pokedex-image-wrapper {
   content: url('../../images/projects/bird.png');
   width: 100%;
@@ -164,7 +160,6 @@ body {
 }
 
 /* Active thumbnail styling */
-
 #pokedex.active,
 #morsel.active,
 #nookbnb.active,
@@ -180,12 +175,11 @@ body {
 #morsel.active .projects.morsel-wrapper,
 #nookbnb.active .projects.nookbnb-wrapper,
 #fikafy.active .projects.fikafy-wrapper,
-#goodzilla.active .projects.goodzilla-wrapper  {
+#goodzilla.active .projects.goodzilla-wrapper {
   width: 50%;
 }
 
 /* Project links styling */
-
 #pokedex-links-wrapper,
 #morsel-links-wrapper,
 #nookbnb-links-wrapper,
@@ -202,7 +196,7 @@ body {
 #morsel-links-wrapper h3,
 #nookbnb-links-wrapper h3,
 #fikafy-links-wrapper h3,
-#goodzilla-links-wrapper h3   {
+#goodzilla-links-wrapper h3 {
   font-family: 'proximaNovaBold';
   font-size: 1em;
 }
@@ -230,7 +224,7 @@ body {
 #morsel-links-wrapper p a,
 #nookbnb-links-wrapper p a,
 #fikafy-links-wrapper p a,
-#goodzilla-links-wrapper p a   {
+#goodzilla-links-wrapper p a {
   color: var(--gray);
   text-decoration: none;
 }
@@ -253,7 +247,6 @@ body {
 }
 
 /* Text fade in styling */
-
 .fade-in {
   animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 5s;
@@ -264,51 +257,55 @@ body {
 
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-ms-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 /* Dynamic styling */
-
 @media screen and (min-width: 320px) {
   .projects.main-container h1 {
     font-size: calc(35px + 6 * ((100vw - 320px) / 680));
@@ -330,6 +327,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+
   #pokedex.active,
   #morsel.active,
   #nookbnb.active,
@@ -343,7 +341,7 @@ body {
   #morsel.active .projects.morsel-wrapper,
   #nookbnb.active .projects.nookbnb-wrapper,
   #fikafy.active .projects.fikafy-wrapper,
-  #goodzilla.active .projects.goodzilla-wrapper  {
+  #goodzilla.active .projects.goodzilla-wrapper {
     display: none;
   }
 

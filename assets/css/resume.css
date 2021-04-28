@@ -8,7 +8,6 @@
 }
 
 /* Resume nav bar styling */
-
 .resume.nav-container {
   display: flex;
   flex-direction: row;
@@ -26,8 +25,8 @@
   font-family: 'proximaNovaBold';
   font-size: 1em;
   color: var(--gray);
-  width: 17%;
-  min-width: 8.5em;
+  width: 30%;
+  min-width: 12.5em;
   box-sizing: border-box;
   padding: 1% 1.5%;
   background: white;
@@ -52,7 +51,6 @@
 }
 
 /* Resume download styling */
-
 button {
   font-family: 'proximaNovaBold';
   font-size: 1.2em;
@@ -68,7 +66,6 @@ button:hover {
 }
 
 /* Resume header styling */
-
 .header-container {
   display: flex;
   flex-direction: row;
@@ -84,7 +81,7 @@ button:hover {
   justify-content: center;
   font-family: 'proximaNovaBold';
   width: 20%;
-  min-width: 180px;
+  min-width: 200px;
 }
 
 .title-wrapper h1 {
@@ -139,7 +136,6 @@ button:hover {
 }
 
 /* Resume skills styling */
-
 .resume.skills-container {
   width: 100%;
 }
@@ -171,7 +167,6 @@ button:hover {
 }
 
 /* Resume experience styling */
-
 .experience-container,
 .education-container,
 .courses-container {
@@ -218,31 +213,29 @@ button:hover {
 }
 
 /* Resume education styling */
-
 .school-wrapper {
   margin-bottom: 1em;
 }
 
 /* Resume courses styling */
-
 .courses-container {
   box-sizing: border-box;
   padding-bottom: 3em;
 }
 
 /* Dynamic styling */
-
 @media screen and (min-width: 320px) {
+
   .resume.nav-container ul,
   .download-container button {
     font-size: calc(15px + 5 * ((100vw - 320px) / 680));
   }
 
-  .title-wrapper  h1 {
+  .title-wrapper h1 {
     font-size: calc(26px + 6 * ((100vw - 320px) / 680));
   }
 
-  .title-wrapper  h2 {
+  .title-wrapper h2 {
     font-size: calc(10px + 6 * ((100vw - 320px) / 680));
   }
 
@@ -266,6 +259,7 @@ button:hover {
 }
 
 @media screen and (min-width: 1000px) {
+
   .resume.nav-container ul,
   .download-container button {
     font-size: 20px;
@@ -275,11 +269,11 @@ button:hover {
     margin: 10% 0 5% 0;
   }
 
-  .title-wrapper  h1 {
+  .title-wrapper h1 {
     font-size: 32px;
   }
 
-  .title-wrapper  h2,
+  .title-wrapper h2,
   .contact-wrapper ul li a {
     font-size: 16px;
   }
@@ -352,7 +346,6 @@ button:hover {
   }
 
   /* Work exp styling */
-
   button {
     font-family: 'proximaNovaBold';
     font-size: 1.2em;
@@ -363,27 +356,30 @@ button:hover {
   }
 }
 
-
-/* About.html styling */
-
 .about-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: white;
   border: 2px solid black;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-	height: 30em;
-  float: right;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+  }
 }
 
 .about-image {
-  border-radius: 50%;
-  border: 5px solid white;
   height: 13em;
   width: auto;
-  margin-top: 20rem;
-}
-.image-div {
-  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
