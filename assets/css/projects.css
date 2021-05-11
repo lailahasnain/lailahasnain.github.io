@@ -124,13 +124,7 @@ body {
 }
 
 .projects.fikafy-image-wrapper {
-  content: url('../../images/projects/fikafy.png');
-  width: 100%;
-  height: 100%;
-}
-
-.projects.fikafy-image-wrapper:hover {
-  content: url('../../images/projects/fikafy.gif');
+  content: url('../../images/projects/trello.png');
   width: 100%;
   height: 100%;
 }
