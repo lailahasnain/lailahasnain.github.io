@@ -31,7 +31,7 @@
   padding: 1% 1.5%;
   background: white;
   border: 2px solid var(--gray);
-  box-shadow: 5px 5px 0 0.5px #17e9e0;
+  box-shadow: 5px 5px 0 0.5px #FFD700;
   list-style: none;
   margin-right: 10%;
 }
@@ -45,7 +45,7 @@
 }
 
 .resume.nav-container ul li a:hover {
-  background: #b9f8f5;
+  background: #d1c27b;
   transition: background 0.3s;
   cursor: pointer;
 }
@@ -157,7 +157,7 @@ button:hover {
   padding: 0.5em 0 0.5em 0.5em;
   width: 15%;
   border: 2px solid var(--gray);
-  box-shadow: 5px 5px 0 0.5px #17e1e9;
+  box-shadow: 5px 5px 0 0.5px #FFD700;
 }
 
 .resume.skills-container p,
@@ -196,7 +196,7 @@ button:hover {
 
 .job-header-wrapper h3:first-of-type,
 .school-wrapper h3:first-of-type {
-  background: #17e1e9;
+  background: #FFD700;
   box-sizing: border-box;
   padding: 0.25em;
 }
@@ -366,19 +366,20 @@ button:hover {
   padding-bottom: 30px;
 
   p {
-    max-width: 700px;
+    max-width: 850px;
     margin: 0 auto;
     display: block;
     font-size: 18px;
+    margin-bottom: 15px;
   }
 }
 
 .about-image {
-  height: 13em;
+  height: 15em;
   width: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border-radius: 50%;
+  border-radius: 10%;
   display: block;
   margin-left: auto;
   margin-right: auto;
