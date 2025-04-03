@@ -5,7 +5,7 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	background: #17e9e0;
+	background: gold;
 }
 
 /* Home background styling */
@@ -67,11 +67,11 @@ body {
 .home.header-wrapper ul li a {
 	text-decoration: none;
 	color: var(--mid-gray);
-	border-bottom: 3px solid #17e9e0;
+	border-bottom: 3px solid gold;
 }
 
-.home.header-wrapper ul a:hover {
-  border-bottom: 3px solid var(--light-blue);
+.home.header-wrapper ul a::hover, .home.header-wrapper ul a::focus {
+ 	border-bottom: 3px solid var(--light-blue);
 	transition: border-bottom 0.3s;
 	cursor: pointer;
 }
