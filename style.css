@@ -1,11 +1,12 @@
 :root {
-  --bg: #0a192f;
-  --bg-soft: #112240;
-  --text: #ccd6f6;
-  --muted: #8892b0;
-  --accent: #64ffda;
-  --card: rgba(17, 34, 64, 0.72);
-  --border: rgba(136, 146, 176, 0.26);
+  --bg: #faf9f6;
+  --bg-soft: #ffffff;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --card: #ffffff;
+  --border: #e5e7eb;
   --mono: "IBM Plex Mono", monospace;
   --sans: "DM Sans", sans-serif;
 }
@@ -25,10 +26,7 @@ body {
   min-height: 100vh;
   font-family: var(--sans);
   color: var(--text);
-  background:
-    radial-gradient(circle at 75% 14%, rgba(100, 255, 218, 0.12), transparent 36%),
-    radial-gradient(circle at 15% 84%, rgba(30, 155, 153, 0.1), transparent 30%),
-    var(--bg);
+  background: var(--bg);
   line-height: 1.7;
 }
 
@@ -183,7 +181,7 @@ h1 {
     background-color 0.24s ease;
 }
 
-.timeline-card:hover {
+.timeline-card:hover, .timeline-card:focus {
   transform: translateY(-2px);
   background: var(--card);
   border-color: var(--border);
@@ -215,8 +213,8 @@ h2 {
   font-family: var(--mono);
   font-size: 0.7rem;
   color: var(--accent);
-  background: rgba(100, 255, 218, 0.1);
-  border: 1px solid rgba(100, 255, 218, 0.22);
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.25);
   border-radius: 999px;
   padding: 0.2rem 0.55rem;
 }
@@ -250,7 +248,7 @@ h2 {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border: 1px solid rgba(136, 146, 176, 0.32);
+  border: 1px solid var(--border);
 }
 
 .inline-cta {
@@ -274,7 +272,7 @@ h2 {
 }
 
 .inline-cta:hover, .inline-cta:focus  {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 .inline-cta:hover::after,
@@ -294,6 +292,7 @@ h2 {
 }
 
 .email-link:hover, .email-link:focus {
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 
