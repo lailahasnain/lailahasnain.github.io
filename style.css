@@ -252,7 +252,7 @@ h2 {
 }
 
 .inline-cta {
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 0.45rem;
   color: var(--text);
